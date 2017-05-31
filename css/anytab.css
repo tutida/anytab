@@ -1,0 +1,45 @@
+#bg-wrapper{
+    background-size:cover;
+    height:100vh;
+}
+
+#bg-wrapper h1 {
+    font-family: "Helvetica Neue";
+    color: white;
+    font-size: 10vw;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin:0;
+}
+
+#bg-wrapper::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.1);
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.block-text h1{
+    display:inline;
+}
+
+.options-titile {
+    font-size: 16pt;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    padding-left: 11px;
+    border-left: 4px solid #2f4154;
+    border-bottom: 2px solid #2f4154;
+}
+
+.w100p {
+  width: 100%;
+}

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Anytab",
+  "version": "1.0",
+  "description": "Set your favorite image as a new tab",
+  "browser_action": {
+    "default_icon": "icons/icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "js/lib/jquery.min.js",
+      "js/background.js"
+    ]
+  },
+  "options_page": "options.html",
+  "chrome_url_overrides": {
+    "newtab": "anytab.html"
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "tabs",
+    "http://www.google.com/",
+    "https://www.google.com/",
+    "http://*/",
+    "https://*/"
+  ]
+}
